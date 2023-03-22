@@ -1,6 +1,6 @@
 <?php
 
-namespace swkberlin;
+namespace iut;
 
 interface iThermometer
 {

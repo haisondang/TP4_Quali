@@ -3,8 +3,8 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use swkberlin\Radiator;
-use swkberlin\Thermometer;
+use iut\Radiator;
+use iut\Thermometer;
 
 use \Mockery\Adapter\Phpunit\MockeryTestCase;
 

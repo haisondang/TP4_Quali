@@ -1,8 +1,8 @@
 <?php
 
-namespace swkberlin;
+namespace iut;
 use Exception;
-use iThermometer;
+use iut\iThermometer;
 
 class Thermometer implements iThermometer
 {
