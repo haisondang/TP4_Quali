@@ -14,11 +14,20 @@ class RadiatorTest extends MockeryTestCase
 {
     public function testUpdateThermostat()
     {
-        $radiator = new Radiator(new Thermometer());
+        /*$radiator = new Radiator(new Thermometer());
 
+        
+        */
+        
+
+        $it = \Mockery::mock('iThermometer');
+        $it->shouldReceive('outsideTemperature')
+        ->times(1)
+        ->andReturn(3);
+        $radiator = new Radiator($it);
         $radiator->updateThermostatFromOutsideTemperature();
-
         $this->assertSame(3, $radiator->thermostat);
+
     }
 
 }
